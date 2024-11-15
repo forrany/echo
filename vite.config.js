@@ -22,6 +22,10 @@ export default defineConfig({
   build: {
     outDir: "scripts",
     cssCodeSplit: false,
+    watch: {
+      include: 'src/**',
+      exclude: ['node_modules/**', 'scripts/**']
+    },
     rollupOptions: {
       input: {
         background: "src/background.js",

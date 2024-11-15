@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "watch": "vite build --watch",
     "build:template": "vite build --config vite.template.config.js",
     "build:default": "vite build",
     "build": "npm run build:default && npm run build:template",
